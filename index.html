@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Phone Gap App</title>
+  </head>
+  <body>
+    Hello Peeps!
+	<br/>
+	<button id="mybutton">Get Me Date</button>
+	<button id="myclear">clear</button>
+	<div id="myresults"/>
+	<script src="js/zepto.min.js"></script>
+	<!--script src="js/worker.js"></script-->
+	<script>
+	  $('#mybutton').click(function() {
+	    $('#myresults').prepend(Date() + '<br/>');
+	  });
+	  $('#myclear').click(function() {
+	    $('#myresults').html('');
+	  });	  
+	</script>
+  </body>
+</html>
